@@ -1,0 +1,15 @@
+- docker-compose -f docker-compose-build.yaml build
+
+- docker tag udagram-api-feed 01065450079/reverseproxy:v1
+
+- docker tag udagram-api-feed 01065450079/udagram-api-user:v1
+
+- docker tag udagram-api-feed 01065450079/udagram-api-feed:v1
+
+- docker tag udagram-api-feed 01065450079/udagram-frontend:v1
+
+- echo "$DOCKER_PASSWORD" | docker login -u "$DOCKER_USERNAME" --password-stdin
+- docker push 01065450079/reverseproxy:v1
+- docker push 01065450079/udagram-api-user:v1
+- docker push 01065450079/udagram-api-feed:v1
+- docker push 01065450079/udagram-frontend:v1
