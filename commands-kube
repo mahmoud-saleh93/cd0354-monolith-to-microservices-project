@@ -1,0 +1,60 @@
+kubectl expose deployment reverseproxy --type=LoadBalancer --name=publicreverseproxy
+kubectl autoscale deployment user-api --cpu-percent=70 --min=3 --max=5
+kubectl autoscale deployment feed-api --cpu-percent=70 --min=3 --max=5
+kubectl autoscale deployment reverseproxy --cpu-percent=70 --min=3 --max=5
+kubectl autoscale deployment user-api --cpu-percent=70 --min=3 --max=5
+
+kubectl expose deployment feed-api --type=LoadBalancer --name=publicfeed-api
+
+
+
+kubectl set image deployment frontend frontend=01065450079/udagram-frontend:v2
+kubectl set image deployment frontend frontend=01065450079/udagram-frontend:v2
+kubectl set image deployment frontend frontend=01065450079/udagram-frontend:v2
+kubectl set image deployment frontend frontend=01065450079/udagram-frontend:v2
+
+
+feed-api       0/3     3            0           52m
+frontend       1/3     3            1           45m
+reverseproxy   1/3     3            1           45m
+user-api       0/3     3            0           46m
+malaa@ed
+
+ 01065450079/reverseproxy:v2
+  - docker push 01065450079/udagram-api-user:v2
+  - docker push 01065450079/udagram-api-feed:v2
+  - docker push 01065450079/udagram-frontend:v2
+
+
+docker build . -t 01065450079/udagram-api-user:v3
+docker push 01065450079/udagram-api-user:v3
+
+
+docker build . -t 01065450079/udagram-api-feed:v3
+docker push 01065450079/udagram-api-feed:v3
+
+
+kubectl set image deployment user-api user-api=01065450079/udagram-api-user:v3
+
+kubectl set image deployment feed-api feed-api=01065450079/udagram-api-feed:v3
+
+
+
+docker build . -t 01065450079/udagram-frontend:v3
+docker push 01065450079/udagram-frontend:v3
+
+
+docker build . -t 01065450079/reverseproxy:v3
+docker push 01065450079/reverseproxy:v4
+
+
+kubectl set image deployment frontend frontend=01065450079/udagram-frontend:v3
+
+kubectl set image deployment reverseproxy reverseproxy=01065450079/reverseproxy:v4
+
+
+kubectl exec --stdin --tty feed-api-74cc79485d-q4tlb -- /bin/bash
+
+
+#installing metric server 
+kubectl apply -f https://github.com/kubernetes-sigs/metrics-server/releases/latest/download/components.yaml
