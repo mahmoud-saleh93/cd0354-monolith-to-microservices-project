@@ -1,0 +1,89 @@
+malaa@edafa19-lt:/usr_var/web2sms/oracle/user_projects/domains/web2sms2/udacity-project-files$ kubectl get hpa
+NAME           REFERENCE                 TARGETS   MINPODS   MAXPODS   REPLICAS   AGE
+feed-api       Deployment/feed-api       0%/70%    3         5         3          75s
+frontend       Deployment/frontend       0%/70%    3         5         3          16s
+reverseproxy   Deployment/reverseproxy   0%/70%    3         5         3          28s
+user-api       Deployment/user-api       0%/70%    3         5         3          39s
+
+=====================================================================================================================
+malaa@edafa19-lt:/usr_var/web2sms/oracle/user_projects/domains/web2sms2/udacity-project-files$ kubectl describe   hpa
+
+Name:                                                  feed-api
+Namespace:                                             default
+Labels:                                                <none>
+Annotations:                                           <none>
+CreationTimestamp:                                     Sun, 04 Dec 2022 19:31:07 +0200
+Reference:                                             Deployment/feed-api
+Metrics:                                               ( current / target )
+  resource cpu on pods  (as a percentage of request):  0% (0) / 70%
+Min replicas:                                          3
+Max replicas:                                          5
+Deployment pods:                                       3 current / 3 desired
+Conditions:
+  Type            Status  Reason               Message
+  ----            ------  ------               -------
+  AbleToScale     True    ScaleDownStabilized  recent recommendations were higher than current one, applying the highest recent recommendation
+  ScalingActive   True    ValidMetricFound     the HPA was able to successfully calculate a replica count from cpu resource utilization (percentage of request)
+  ScalingLimited  False   DesiredWithinRange   the desired count is within the acceptable range
+Events:           <none>
+
+
+Name:                                                  frontend
+Namespace:                                             default
+Labels:                                                <none>
+Annotations:                                           <none>
+CreationTimestamp:                                     Sun, 04 Dec 2022 19:32:06 +0200
+Reference:                                             Deployment/frontend
+Metrics:                                               ( current / target )
+  resource cpu on pods  (as a percentage of request):  0% (0) / 70%
+Min replicas:                                          3
+Max replicas:                                          5
+Deployment pods:                                       3 current / 3 desired
+Conditions:
+  Type            Status  Reason               Message
+  ----            ------  ------               -------
+  AbleToScale     True    ScaleDownStabilized  recent recommendations were higher than current one, applying the highest recent recommendation
+  ScalingActive   True    ValidMetricFound     the HPA was able to successfully calculate a replica count from cpu resource utilization (percentage of request)
+  ScalingLimited  False   DesiredWithinRange   the desired count is within the acceptable range
+Events:           <none>
+
+
+Name:                                                  reverseproxy
+Namespace:                                             default
+Labels:                                                <none>
+Annotations:                                           <none>
+CreationTimestamp:                                     Sun, 04 Dec 2022 19:31:54 +0200
+Reference:                                             Deployment/reverseproxy
+Metrics:                                               ( current / target )
+  resource cpu on pods  (as a percentage of request):  0% (0) / 70%
+Min replicas:                                          3
+Max replicas:                                          5
+Deployment pods:                                       3 current / 3 desired
+Conditions:
+  Type            Status  Reason               Message
+  ----            ------  ------               -------
+  AbleToScale     True    ScaleDownStabilized  recent recommendations were higher than current one, applying the highest recent recommendation
+  ScalingActive   True    ValidMetricFound     the HPA was able to successfully calculate a replica count from cpu resource utilization (percentage of request)
+  ScalingLimited  False   DesiredWithinRange   the desired count is within the acceptable range
+Events:           <none>
+
+
+Name:                                                  user-api
+Namespace:                                             default
+Labels:                                                <none>
+Annotations:                                           <none>
+CreationTimestamp:                                     Sun, 04 Dec 2022 19:31:43 +0200
+Reference:                                             Deployment/user-api
+Metrics:                                               ( current / target )
+  resource cpu on pods  (as a percentage of request):  0% (0) / 70%
+Min replicas:                                          3
+Max replicas:                                          5
+Deployment pods:                                       3 current / 3 desired
+Conditions:
+  Type            Status  Reason               Message
+  ----            ------  ------               -------
+  AbleToScale     True    ScaleDownStabilized  recent recommendations were higher than current one, applying the highest recent recommendation
+  ScalingActive   True    ValidMetricFound     the HPA was able to successfully calculate a replica count from cpu resource utilization (percentage of request)
+  ScalingLimited  False   DesiredWithinRange   the desired count is within the acceptable range
+Events:           <none>
+

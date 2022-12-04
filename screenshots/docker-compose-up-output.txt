@@ -1,0 +1,350 @@
+Starting cd0354-monolith-to-microservices-project_backend-feed_1 ... done
+Starting cd0354-monolith-to-microservices-project_frontend_1     ... done
+Starting cd0354-monolith-to-microservices-project_backend-user_1 ... done
+Starting cd0354-monolith-to-microservices-project_reverseproxy_1 ... done
+Attaching to cd0354-monolith-to-microservices-project_backend-feed_1, cd0354-monolith-to-microservices-project_frontend_1, cd0354-monolith-to-microservices-project_backend-user_1, cd0354-monolith-to-microservices-project_reverseproxy_1
+backend-feed_1  | 
+backend-feed_1  | > udagram-api@2.0.0 prod /usr/src/app
+backend-feed_1  | > tsc && node ./www/server.js
+backend-feed_1  | 
+frontend_1      | /docker-entrypoint.sh: /docker-entrypoint.d/ is not empty, will attempt to perform configuration
+frontend_1      | /docker-entrypoint.sh: Looking for shell scripts in /docker-entrypoint.d/
+frontend_1      | /docker-entrypoint.sh: Launching /docker-entrypoint.d/10-listen-on-ipv6-by-default.sh
+frontend_1      | 10-listen-on-ipv6-by-default.sh: info: IPv6 listen already enabled
+frontend_1      | /docker-entrypoint.sh: Launching /docker-entrypoint.d/20-envsubst-on-templates.sh
+frontend_1      | /docker-entrypoint.sh: Launching /docker-entrypoint.d/30-tune-worker-processes.sh
+frontend_1      | /docker-entrypoint.sh: Configuration complete; ready for start up
+frontend_1      | 2022/12/02 23:33:09 [notice] 1#1: using the "epoll" event method
+frontend_1      | 2022/12/02 23:33:09 [notice] 1#1: nginx/1.23.2
+frontend_1      | 2022/12/02 23:33:09 [notice] 1#1: built by gcc 11.2.1 20220219 (Alpine 11.2.1_git20220219) 
+frontend_1      | 2022/12/02 23:33:09 [notice] 1#1: OS: Linux 4.9.0-19-amd64
+frontend_1      | 2022/12/02 23:33:09 [notice] 1#1: getrlimit(RLIMIT_NOFILE): 1048576:1048576
+frontend_1      | 2022/12/02 23:33:09 [notice] 1#1: start worker processes
+frontend_1      | 2022/12/02 23:33:09 [notice] 1#1: start worker process 21
+frontend_1      | 2022/12/02 23:33:09 [notice] 1#1: start worker process 22
+frontend_1      | 2022/12/02 23:33:09 [notice] 1#1: start worker process 23
+frontend_1      | 2022/12/02 23:33:09 [notice] 1#1: start worker process 24
+backend-user_1  | 
+backend-user_1  | > udagram-api@2.0.0 prod /usr/src/app
+backend-user_1  | > tsc && node ./www/server.js
+backend-user_1  | 
+reverseproxy_1  | /docker-entrypoint.sh: /docker-entrypoint.d/ is not empty, will attempt to perform configuration
+reverseproxy_1  | /docker-entrypoint.sh: Looking for shell scripts in /docker-entrypoint.d/
+reverseproxy_1  | /docker-entrypoint.sh: Launching /docker-entrypoint.d/10-listen-on-ipv6-by-default.sh
+reverseproxy_1  | 10-listen-on-ipv6-by-default.sh: info: IPv6 listen already enabled
+reverseproxy_1  | /docker-entrypoint.sh: Launching /docker-entrypoint.d/20-envsubst-on-templates.sh
+reverseproxy_1  | /docker-entrypoint.sh: Launching /docker-entrypoint.d/30-tune-worker-processes.sh
+reverseproxy_1  | /docker-entrypoint.sh: Configuration complete; ready for start up
+reverseproxy_1  | 2022/12/02 23:33:11 [notice] 1#1: using the "epoll" event method
+reverseproxy_1  | 2022/12/02 23:33:11 [notice] 1#1: nginx/1.23.2
+reverseproxy_1  | 2022/12/02 23:33:11 [notice] 1#1: built by gcc 11.2.1 20220219 (Alpine 11.2.1_git20220219) 
+reverseproxy_1  | 2022/12/02 23:33:11 [notice] 1#1: OS: Linux 4.9.0-19-amd64
+reverseproxy_1  | 2022/12/02 23:33:11 [notice] 1#1: getrlimit(RLIMIT_NOFILE): 1048576:1048576
+reverseproxy_1  | 2022/12/02 23:33:11 [notice] 1#1: start worker processes
+reverseproxy_1  | 2022/12/02 23:33:11 [notice] 1#1: start worker process 21
+backend-feed_1  | node_modules/@types/bluebird/index.d.ts(42,47): error TS1005: '?' expected.
+backend-feed_1  | node_modules/@types/bluebird/index.d.ts(42,59): error TS1005: ';' expected.
+backend-feed_1  | node_modules/@types/bluebird/index.d.ts(54,17): error TS1005: ']' expected.
+backend-feed_1  | node_modules/@types/bluebird/index.d.ts(54,20): error TS1005: ';' expected.
+backend-feed_1  | node_modules/@types/bluebird/index.d.ts(54,39): error TS1005: '(' expected.
+backend-feed_1  | node_modules/@types/bluebird/index.d.ts(54,40): error TS1135: Argument expression expected.
+backend-feed_1  | node_modules/@types/bluebird/index.d.ts(54,66): error TS1005: '(' expected.
+backend-feed_1  | node_modules/@types/bluebird/index.d.ts(55,1): error TS1128: Declaration or statement expected.
+backend-feed_1  | node_modules/@types/bluebird/index.d.ts(58,17): error TS1005: ']' expected.
+backend-feed_1  | node_modules/@types/bluebird/index.d.ts(58,20): error TS1005: ';' expected.
+backend-feed_1  | node_modules/@types/bluebird/index.d.ts(58,25): error TS1005: ';' expected.
+backend-feed_1  | node_modules/@types/bluebird/index.d.ts(58,50): error TS1005: ';' expected.
+backend-feed_1  | node_modules/@types/bluebird/index.d.ts(58,51): error TS1128: Declaration or statement expected.
+backend-feed_1  | node_modules/@types/bluebird/index.d.ts(59,1): error TS1128: Declaration or statement expected.
+backend-feed_1  | node_modules/@types/express-serve-static-core/index.d.ts(99,68): error TS1110: Type expected.
+backend-feed_1  | node_modules/@types/express-serve-static-core/index.d.ts(99,77): error TS1005: '}' expected.
+backend-feed_1  | node_modules/@types/express-serve-static-core/index.d.ts(99,78): error TS1128: Declaration or statement expected.
+backend-feed_1  | node_modules/@types/express-serve-static-core/index.d.ts(99,80): error TS1005: ';' expected.
+backend-feed_1  | node_modules/@types/express-serve-static-core/index.d.ts(101,33): error TS1005: ';' expected.
+backend-feed_1  | node_modules/@types/express-serve-static-core/index.d.ts(101,48): error TS1005: ';' expected.
+backend-feed_1  | node_modules/@types/express-serve-static-core/index.d.ts(102,8): error TS1005: ';' expected.
+backend-feed_1  | node_modules/@types/express-serve-static-core/index.d.ts(108,22): error TS1005: ';' expected.
+backend-feed_1  | node_modules/@types/express-serve-static-core/index.d.ts(108,23): error TS1005: ';' expected.
+backend-feed_1  | node_modules/@types/express-serve-static-core/index.d.ts(108,33): error TS1005: ')' expected.
+backend-feed_1  | node_modules/@types/express-serve-static-core/index.d.ts(110,26): error TS1005: ';' expected.
+backend-feed_1  | node_modules/@types/express-serve-static-core/index.d.ts(110,27): error TS1005: ';' expected.
+backend-feed_1  | node_modules/@types/express-serve-static-core/index.d.ts(110,35): error TS1128: Declaration or statement expected.
+backend-feed_1  | node_modules/@types/express-serve-static-core/index.d.ts(110,37): error TS1005: ';' expected.
+backend-feed_1  | node_modules/@types/express-serve-static-core/index.d.ts(110,44): error TS1005: ';' expected.
+backend-feed_1  | node_modules/@types/express-serve-static-core/index.d.ts(114,52): error TS1005: ';' expected.
+backend-feed_1  | node_modules/@types/express-serve-static-core/index.d.ts(114,53): error TS1005: ';' expected.
+backend-feed_1  | node_modules/@types/express-serve-static-core/index.d.ts(114,60): error TS1005: ';' expected.
+backend-feed_1  | node_modules/@types/express-serve-static-core/index.d.ts(114,70): error TS1128: Declaration or statement expected.
+backend-feed_1  | node_modules/@types/express-serve-static-core/index.d.ts(118,28): error TS1005: ';' expected.
+backend-feed_1  | node_modules/@types/express-serve-static-core/index.d.ts(118,29): error TS1005: ';' expected.
+backend-feed_1  | node_modules/@types/express-serve-static-core/index.d.ts(118,53): error TS1005: '(' expected.
+backend-feed_1  | node_modules/@types/express-serve-static-core/index.d.ts(118,55): error TS1005: ';' expected.
+backend-feed_1  | node_modules/@types/express-serve-static-core/index.d.ts(118,62): error TS1005: ';' expected.
+backend-feed_1  | node_modules/@types/express-serve-static-core/index.d.ts(224,41): error TS1005: ';' expected.
+backend-feed_1  | node_modules/@types/express-serve-static-core/index.d.ts(233,31): error TS1005: ';' expected.
+backend-feed_1  | node_modules/@types/express-serve-static-core/index.d.ts(259,62): error TS1005: ';' expected.
+backend-feed_1  | node_modules/@types/express-serve-static-core/index.d.ts(355,49): error TS1005: ';' expected.
+backend-feed_1  | node_modules/@types/express-serve-static-core/index.d.ts(356,59): error TS1005: ';' expected.
+backend-feed_1  | node_modules/@types/express-serve-static-core/index.d.ts(357,5): error TS1005: ';' expected.
+backend-feed_1  | node_modules/@types/express-serve-static-core/index.d.ts(357,25): error TS1005: ';' expected.
+backend-feed_1  | node_modules/@types/express-serve-static-core/index.d.ts(357,44): error TS1005: ';' expected.
+backend-feed_1  | node_modules/@types/express-serve-static-core/index.d.ts(358,31): error TS1005: ';' expected.
+backend-feed_1  | node_modules/@types/express-serve-static-core/index.d.ts(363,84): error TS1005: ';' expected.
+backend-feed_1  | node_modules/@types/express-serve-static-core/index.d.ts(378,13): error TS1005: ';' expected.
+backend-feed_1  | node_modules/@types/express-serve-static-core/index.d.ts(379,14): error TS1005: ';' expected.
+backend-feed_1  | node_modules/@types/express-serve-static-core/index.d.ts(379,29): error TS1005: ';' expected.
+backend-feed_1  | node_modules/@types/express-serve-static-core/index.d.ts(392,20): error TS1005: ';' expected.
+backend-feed_1  | node_modules/@types/express-serve-static-core/index.d.ts(401,28): error TS1005: ';' expected.
+backend-feed_1  | node_modules/@types/express-serve-static-core/index.d.ts(402,45): error TS1005: ';' expected.
+backend-feed_1  | node_modules/@types/express-serve-static-core/index.d.ts(405,13): error TS1005: ';' expected.
+backend-feed_1  | node_modules/@types/express-serve-static-core/index.d.ts(479,56): error TS1005: ';' expected.
+backend-feed_1  | node_modules/@types/express-serve-static-core/index.d.ts(483,48): error TS1005: ';' expected.
+backend-feed_1  | node_modules/@types/express-serve-static-core/index.d.ts(502,35): error TS1005: ';' expected.
+backend-feed_1  | node_modules/@types/express-serve-static-core/index.d.ts(502,58): error TS1005: ';' expected.
+backend-feed_1  | node_modules/@types/express-serve-static-core/index.d.ts(508,36): error TS1005: ';' expected.
+backend-feed_1  | node_modules/@types/express-serve-static-core/index.d.ts(510,13): error TS1005: ';' expected.
+backend-feed_1  | node_modules/@types/express-serve-static-core/index.d.ts(516,53): error TS1005: ';' expected.
+backend-feed_1  | node_modules/@types/express-serve-static-core/index.d.ts(556,26): error TS1005: ';' expected.
+backend-feed_1  | node_modules/@types/express-serve-static-core/index.d.ts(562,31): error TS1005: ';' expected.
+backend-feed_1  | node_modules/@types/express-serve-static-core/index.d.ts(585,24): error TS1005: ';' expected.
+backend-feed_1  | node_modules/@types/express-serve-static-core/index.d.ts(666,20): error TS1005: ';' expected.
+backend-feed_1  | node_modules/@types/express-serve-static-core/index.d.ts(671,46): error TS1005: ';' expected.
+backend-feed_1  | node_modules/@types/express-serve-static-core/index.d.ts(684,46): error TS1005: ';' expected.
+backend-feed_1  | node_modules/@types/express-serve-static-core/index.d.ts(732,40): error TS1005: ';' expected.
+backend-feed_1  | node_modules/@types/express-serve-static-core/index.d.ts(735,22): error TS1005: ';' expected.
+backend-feed_1  | node_modules/@types/express-serve-static-core/index.d.ts(736,51): error TS1005: ';' expected.
+backend-feed_1  | node_modules/@types/express-serve-static-core/index.d.ts(742,13): error TS1005: ';' expected.
+backend-feed_1  | node_modules/@types/express-serve-static-core/index.d.ts(742,68): error TS1005: ';' expected.
+backend-feed_1  | node_modules/@types/express-serve-static-core/index.d.ts(743,13): error TS1005: ';' expected.
+backend-feed_1  | node_modules/@types/express-serve-static-core/index.d.ts(744,13): error TS1005: ';' expected.
+backend-feed_1  | node_modules/@types/express-serve-static-core/index.d.ts(745,13): error TS1005: ';' expected.
+backend-feed_1  | node_modules/@types/express-serve-static-core/index.d.ts(745,68): error TS1005: ';' expected.
+backend-feed_1  | node_modules/@types/express-serve-static-core/index.d.ts(747,43): error TS1005: ';' expected.
+backend-feed_1  | node_modules/@types/express-serve-static-core/index.d.ts(751,48): error TS1005: ';' expected.
+backend-feed_1  | node_modules/@types/express-serve-static-core/index.d.ts(752,44): error TS1005: ';' expected.
+backend-feed_1  | node_modules/@types/express-serve-static-core/index.d.ts(753,47): error TS1005: ';' expected.
+backend-feed_1  | node_modules/@types/express-serve-static-core/index.d.ts(792,40): error TS1005: ';' expected.
+backend-feed_1  | node_modules/@types/express-serve-static-core/index.d.ts(794,54): error TS1005: ';' expected.
+backend-feed_1  | node_modules/@types/express-serve-static-core/index.d.ts(795,31): error TS1005: ';' expected.
+backend-feed_1  | node_modules/@types/express-serve-static-core/index.d.ts(797,35): error TS1005: ';' expected.
+backend-feed_1  | node_modules/@types/express-serve-static-core/index.d.ts(802,26): error TS1005: ';' expected.
+backend-feed_1  | node_modules/@types/express-serve-static-core/index.d.ts(809,49): error TS1005: ';' expected.
+backend-feed_1  | node_modules/@types/express-serve-static-core/index.d.ts(809,64): error TS1005: ';' expected.
+backend-feed_1  | node_modules/@types/express-serve-static-core/index.d.ts(810,66): error TS1005: ';' expected.
+backend-feed_1  | node_modules/@types/express-serve-static-core/index.d.ts(823,49): error TS1005: ';' expected.
+backend-feed_1  | node_modules/@types/express-serve-static-core/index.d.ts(823,64): error TS1005: ';' expected.
+backend-feed_1  | node_modules/@types/express-serve-static-core/index.d.ts(824,66): error TS1005: ';' expected.
+backend-feed_1  | node_modules/@types/express-serve-static-core/index.d.ts(837,52): error TS1005: ';' expected.
+backend-feed_1  | node_modules/@types/express-serve-static-core/index.d.ts(840,26): error TS1005: ';' expected.
+backend-feed_1  | node_modules/@types/express-serve-static-core/index.d.ts(848,54): error TS1005: ';' expected.
+backend-feed_1  | node_modules/@types/express-serve-static-core/index.d.ts(849,12): error TS1005: ';' expected.
+backend-feed_1  | node_modules/@types/express-serve-static-core/index.d.ts(849,39): error TS1109: Expression expected.
+backend-feed_1  | node_modules/@types/express-serve-static-core/index.d.ts(882,38): error TS1005: ';' expected.
+backend-feed_1  | node_modules/@types/express-serve-static-core/index.d.ts(883,36): error TS1005: ';' expected.
+backend-feed_1  | node_modules/@types/express-serve-static-core/index.d.ts(891,72): error TS1005: ';' expected.
+backend-feed_1  | node_modules/@types/express-serve-static-core/index.d.ts(896,20): error TS1005: ';' expected.
+backend-feed_1  | node_modules/@types/express-serve-static-core/index.d.ts(896,31): error TS1005: ';' expected.
+backend-feed_1  | node_modules/@types/express-serve-static-core/index.d.ts(905,20): error TS1005: ';' expected.
+backend-feed_1  | node_modules/@types/express-serve-static-core/index.d.ts(916,31): error TS1005: ';' expected.
+backend-feed_1  | node_modules/@types/express-serve-static-core/index.d.ts(919,23): error TS1005: ';' expected.
+backend-feed_1  | node_modules/@types/express-serve-static-core/index.d.ts(923,20): error TS1005: ';' expected.
+backend-feed_1  | node_modules/@types/express-serve-static-core/index.d.ts(923,30): error TS1005: ';' expected.
+backend-feed_1  | node_modules/@types/express-serve-static-core/index.d.ts(923,52): error TS1005: ';' expected.
+backend-feed_1  | node_modules/@types/express-serve-static-core/index.d.ts(927,14): error TS1005: ';' expected.
+backend-feed_1  | node_modules/@types/express-serve-static-core/index.d.ts(927,63): error TS1005: ';' expected.
+backend-feed_1  | node_modules/@types/express-serve-static-core/index.d.ts(928,14): error TS1005: ';' expected.
+backend-feed_1  | node_modules/@types/express-serve-static-core/index.d.ts(929,14): error TS1005: ';' expected.
+backend-feed_1  | node_modules/@types/express-serve-static-core/index.d.ts(944,36): error TS1005: ';' expected.
+backend-feed_1  | node_modules/@types/express-serve-static-core/index.d.ts(946,19): error TS1005: ';' expected.
+backend-feed_1  | node_modules/@types/express-serve-static-core/index.d.ts(958,46): error TS1005: ';' expected.
+backend-feed_1  | node_modules/@types/express-serve-static-core/index.d.ts(972,31): error TS1005: ';' expected.
+backend-feed_1  | node_modules/@types/express-serve-static-core/index.d.ts(972,60): error TS1005: ';' expected.
+backend-feed_1  | node_modules/@types/express-serve-static-core/index.d.ts(975,23): error TS1005: ';' expected.
+backend-feed_1  | node_modules/@types/express-serve-static-core/index.d.ts(975,46): error TS1005: ';' expected.
+backend-feed_1  | node_modules/@types/express-serve-static-core/index.d.ts(977,9): error TS1005: ';' expected.
+backend-feed_1  | node_modules/@types/express-serve-static-core/index.d.ts(994,16): error TS1005: ';' expected.
+backend-feed_1  | node_modules/@types/express-serve-static-core/index.d.ts(994,38): error TS1005: ';' expected.
+backend-feed_1  | node_modules/@types/express-serve-static-core/index.d.ts(994,70): error TS1005: ';' expected.
+backend-feed_1  | node_modules/@types/express-serve-static-core/index.d.ts(1000,12): error TS1005: ';' expected.
+backend-feed_1  | node_modules/@types/express-serve-static-core/index.d.ts(1001,12): error TS1005: ';' expected.
+backend-feed_1  | node_modules/@types/express-serve-static-core/index.d.ts(1071,53): error TS1005: ';' expected.
+backend-feed_1  | node_modules/@types/express-serve-static-core/index.d.ts(1072,12): error TS1005: ';' expected.
+backend-feed_1  | node_modules/@types/express-serve-static-core/index.d.ts(1074,25): error TS1005: ';' expected.
+backend-feed_1  | node_modules/@types/express-serve-static-core/index.d.ts(1089,52): error TS1005: ';' expected.
+backend-feed_1  | node_modules/@types/express-serve-static-core/index.d.ts(1104,16): error TS1005: ';' expected.
+backend-feed_1  | node_modules/@types/express-serve-static-core/index.d.ts(1104,29): error TS1005: ';' expected.
+backend-feed_1  | node_modules/@types/express-serve-static-core/index.d.ts(1104,46): error TS1005: ';' expected.
+backend-feed_1  | node_modules/@types/express-serve-static-core/index.d.ts(1140,18): error TS1005: ';' expected.
+backend-feed_1  | node_modules/@types/express-serve-static-core/index.d.ts(1152,18): error TS1005: ';' expected.
+backend-feed_1  | node_modules/@types/express-serve-static-core/index.d.ts(1163,17): error TS1005: ';' expected.
+backend-feed_1  | node_modules/@types/express-serve-static-core/index.d.ts(1166,18): error TS1005: ';' expected.
+backend-feed_1  | node_modules/@types/express-serve-static-core/index.d.ts(1170,31): error TS1005: ';' expected.
+backend-feed_1  | node_modules/@types/express-serve-static-core/index.d.ts(1170,48): error TS1005: ';' expected.
+backend-feed_1  | node_modules/@types/express-serve-static-core/index.d.ts(1186,16): error TS1005: ';' expected.
+backend-feed_1  | node_modules/@types/express-serve-static-core/index.d.ts(1187,33): error TS1005: ';' expected.
+backend-feed_1  | node_modules/@types/express-serve-static-core/index.d.ts(1255,1): error TS1160: Unterminated template literal.
+backend-feed_1  | npm ERR! code ELIFECYCLE
+backend-feed_1  | npm ERR! errno 2
+backend-feed_1  | npm ERR! udagram-api@2.0.0 prod: `tsc && node ./www/server.js`
+backend-feed_1  | npm ERR! Exit status 2
+backend-feed_1  | npm ERR! 
+backend-feed_1  | npm ERR! Failed at the udagram-api@2.0.0 prod script.
+backend-feed_1  | npm ERR! This is probably not a problem with npm. There is likely additional logging output above.
+backend-feed_1  | 
+backend-feed_1  | npm ERR! A complete log of this run can be found in:
+backend-feed_1  | npm ERR!     /root/.npm/_logs/2022-12-02T23_33_46_298Z-debug.log
+cd0354-monolith-to-microservices-project_backend-feed_1 exited with code 2
+backend-user_1  | node_modules/@types/bluebird/index.d.ts(42,47): error TS1005: '?' expected.
+backend-user_1  | node_modules/@types/bluebird/index.d.ts(42,59): error TS1005: ';' expected.
+backend-user_1  | node_modules/@types/bluebird/index.d.ts(54,17): error TS1005: ']' expected.
+backend-user_1  | node_modules/@types/bluebird/index.d.ts(54,20): error TS1005: ';' expected.
+backend-user_1  | node_modules/@types/bluebird/index.d.ts(54,39): error TS1005: '(' expected.
+backend-user_1  | node_modules/@types/bluebird/index.d.ts(54,40): error TS1135: Argument expression expected.
+backend-user_1  | node_modules/@types/bluebird/index.d.ts(54,66): error TS1005: '(' expected.
+backend-user_1  | node_modules/@types/bluebird/index.d.ts(55,1): error TS1128: Declaration or statement expected.
+backend-user_1  | node_modules/@types/bluebird/index.d.ts(58,17): error TS1005: ']' expected.
+backend-user_1  | node_modules/@types/bluebird/index.d.ts(58,20): error TS1005: ';' expected.
+backend-user_1  | node_modules/@types/bluebird/index.d.ts(58,25): error TS1005: ';' expected.
+backend-user_1  | node_modules/@types/bluebird/index.d.ts(58,50): error TS1005: ';' expected.
+backend-user_1  | node_modules/@types/bluebird/index.d.ts(58,51): error TS1128: Declaration or statement expected.
+backend-user_1  | node_modules/@types/bluebird/index.d.ts(59,1): error TS1128: Declaration or statement expected.
+backend-user_1  | node_modules/@types/express-serve-static-core/index.d.ts(99,68): error TS1110: Type expected.
+backend-user_1  | node_modules/@types/express-serve-static-core/index.d.ts(99,77): error TS1005: '}' expected.
+backend-user_1  | node_modules/@types/express-serve-static-core/index.d.ts(99,78): error TS1128: Declaration or statement expected.
+backend-user_1  | node_modules/@types/express-serve-static-core/index.d.ts(99,80): error TS1005: ';' expected.
+backend-user_1  | node_modules/@types/express-serve-static-core/index.d.ts(101,33): error TS1005: ';' expected.
+backend-user_1  | node_modules/@types/express-serve-static-core/index.d.ts(101,48): error TS1005: ';' expected.
+backend-user_1  | node_modules/@types/express-serve-static-core/index.d.ts(102,8): error TS1005: ';' expected.
+backend-user_1  | node_modules/@types/express-serve-static-core/index.d.ts(108,22): error TS1005: ';' expected.
+backend-user_1  | node_modules/@types/express-serve-static-core/index.d.ts(108,23): error TS1005: ';' expected.
+backend-user_1  | node_modules/@types/express-serve-static-core/index.d.ts(108,33): error TS1005: ')' expected.
+backend-user_1  | node_modules/@types/express-serve-static-core/index.d.ts(110,26): error TS1005: ';' expected.
+backend-user_1  | node_modules/@types/express-serve-static-core/index.d.ts(110,27): error TS1005: ';' expected.
+backend-user_1  | node_modules/@types/express-serve-static-core/index.d.ts(110,35): error TS1128: Declaration or statement expected.
+backend-user_1  | node_modules/@types/express-serve-static-core/index.d.ts(110,37): error TS1005: ';' expected.
+backend-user_1  | node_modules/@types/express-serve-static-core/index.d.ts(110,44): error TS1005: ';' expected.
+backend-user_1  | node_modules/@types/express-serve-static-core/index.d.ts(114,52): error TS1005: ';' expected.
+backend-user_1  | node_modules/@types/express-serve-static-core/index.d.ts(114,53): error TS1005: ';' expected.
+backend-user_1  | node_modules/@types/express-serve-static-core/index.d.ts(114,60): error TS1005: ';' expected.
+backend-user_1  | node_modules/@types/express-serve-static-core/index.d.ts(114,70): error TS1128: Declaration or statement expected.
+backend-user_1  | node_modules/@types/express-serve-static-core/index.d.ts(118,28): error TS1005: ';' expected.
+backend-user_1  | node_modules/@types/express-serve-static-core/index.d.ts(118,29): error TS1005: ';' expected.
+backend-user_1  | node_modules/@types/express-serve-static-core/index.d.ts(118,53): error TS1005: '(' expected.
+backend-user_1  | node_modules/@types/express-serve-static-core/index.d.ts(118,55): error TS1005: ';' expected.
+backend-user_1  | node_modules/@types/express-serve-static-core/index.d.ts(118,62): error TS1005: ';' expected.
+backend-user_1  | node_modules/@types/express-serve-static-core/index.d.ts(224,41): error TS1005: ';' expected.
+backend-user_1  | node_modules/@types/express-serve-static-core/index.d.ts(233,31): error TS1005: ';' expected.
+backend-user_1  | node_modules/@types/express-serve-static-core/index.d.ts(259,62): error TS1005: ';' expected.
+backend-user_1  | node_modules/@types/express-serve-static-core/index.d.ts(355,49): error TS1005: ';' expected.
+backend-user_1  | node_modules/@types/express-serve-static-core/index.d.ts(356,59): error TS1005: ';' expected.
+backend-user_1  | node_modules/@types/express-serve-static-core/index.d.ts(357,5): error TS1005: ';' expected.
+backend-user_1  | node_modules/@types/express-serve-static-core/index.d.ts(357,25): error TS1005: ';' expected.
+backend-user_1  | node_modules/@types/express-serve-static-core/index.d.ts(357,44): error TS1005: ';' expected.
+backend-user_1  | node_modules/@types/express-serve-static-core/index.d.ts(358,31): error TS1005: ';' expected.
+backend-user_1  | node_modules/@types/express-serve-static-core/index.d.ts(363,84): error TS1005: ';' expected.
+backend-user_1  | node_modules/@types/express-serve-static-core/index.d.ts(378,13): error TS1005: ';' expected.
+backend-user_1  | node_modules/@types/express-serve-static-core/index.d.ts(379,14): error TS1005: ';' expected.
+backend-user_1  | node_modules/@types/express-serve-static-core/index.d.ts(379,29): error TS1005: ';' expected.
+backend-user_1  | node_modules/@types/express-serve-static-core/index.d.ts(392,20): error TS1005: ';' expected.
+backend-user_1  | node_modules/@types/express-serve-static-core/index.d.ts(401,28): error TS1005: ';' expected.
+backend-user_1  | node_modules/@types/express-serve-static-core/index.d.ts(402,45): error TS1005: ';' expected.
+backend-user_1  | node_modules/@types/express-serve-static-core/index.d.ts(405,13): error TS1005: ';' expected.
+backend-user_1  | node_modules/@types/express-serve-static-core/index.d.ts(479,56): error TS1005: ';' expected.
+backend-user_1  | node_modules/@types/express-serve-static-core/index.d.ts(483,48): error TS1005: ';' expected.
+backend-user_1  | node_modules/@types/express-serve-static-core/index.d.ts(502,35): error TS1005: ';' expected.
+backend-user_1  | node_modules/@types/express-serve-static-core/index.d.ts(502,58): error TS1005: ';' expected.
+backend-user_1  | node_modules/@types/express-serve-static-core/index.d.ts(508,36): error TS1005: ';' expected.
+backend-user_1  | node_modules/@types/express-serve-static-core/index.d.ts(510,13): error TS1005: ';' expected.
+backend-user_1  | node_modules/@types/express-serve-static-core/index.d.ts(516,53): error TS1005: ';' expected.
+backend-user_1  | node_modules/@types/express-serve-static-core/index.d.ts(556,26): error TS1005: ';' expected.
+backend-user_1  | node_modules/@types/express-serve-static-core/index.d.ts(562,31): error TS1005: ';' expected.
+backend-user_1  | node_modules/@types/express-serve-static-core/index.d.ts(585,24): error TS1005: ';' expected.
+backend-user_1  | node_modules/@types/express-serve-static-core/index.d.ts(666,20): error TS1005: ';' expected.
+backend-user_1  | node_modules/@types/express-serve-static-core/index.d.ts(671,46): error TS1005: ';' expected.
+backend-user_1  | node_modules/@types/express-serve-static-core/index.d.ts(684,46): error TS1005: ';' expected.
+backend-user_1  | node_modules/@types/express-serve-static-core/index.d.ts(732,40): error TS1005: ';' expected.
+backend-user_1  | node_modules/@types/express-serve-static-core/index.d.ts(735,22): error TS1005: ';' expected.
+backend-user_1  | node_modules/@types/express-serve-static-core/index.d.ts(736,51): error TS1005: ';' expected.
+backend-user_1  | node_modules/@types/express-serve-static-core/index.d.ts(742,13): error TS1005: ';' expected.
+backend-user_1  | node_modules/@types/express-serve-static-core/index.d.ts(742,68): error TS1005: ';' expected.
+backend-user_1  | node_modules/@types/express-serve-static-core/index.d.ts(743,13): error TS1005: ';' expected.
+backend-user_1  | node_modules/@types/express-serve-static-core/index.d.ts(744,13): error TS1005: ';' expected.
+backend-user_1  | node_modules/@types/express-serve-static-core/index.d.ts(745,13): error TS1005: ';' expected.
+backend-user_1  | node_modules/@types/express-serve-static-core/index.d.ts(745,68): error TS1005: ';' expected.
+backend-user_1  | node_modules/@types/express-serve-static-core/index.d.ts(747,43): error TS1005: ';' expected.
+backend-user_1  | node_modules/@types/express-serve-static-core/index.d.ts(751,48): error TS1005: ';' expected.
+backend-user_1  | node_modules/@types/express-serve-static-core/index.d.ts(752,44): error TS1005: ';' expected.
+backend-user_1  | node_modules/@types/express-serve-static-core/index.d.ts(753,47): error TS1005: ';' expected.
+backend-user_1  | node_modules/@types/express-serve-static-core/index.d.ts(792,40): error TS1005: ';' expected.
+backend-user_1  | node_modules/@types/express-serve-static-core/index.d.ts(794,54): error TS1005: ';' expected.
+backend-user_1  | node_modules/@types/express-serve-static-core/index.d.ts(795,31): error TS1005: ';' expected.
+backend-user_1  | node_modules/@types/express-serve-static-core/index.d.ts(797,35): error TS1005: ';' expected.
+backend-user_1  | node_modules/@types/express-serve-static-core/index.d.ts(802,26): error TS1005: ';' expected.
+backend-user_1  | node_modules/@types/express-serve-static-core/index.d.ts(809,49): error TS1005: ';' expected.
+backend-user_1  | node_modules/@types/express-serve-static-core/index.d.ts(809,64): error TS1005: ';' expected.
+backend-user_1  | node_modules/@types/express-serve-static-core/index.d.ts(810,66): error TS1005: ';' expected.
+backend-user_1  | node_modules/@types/express-serve-static-core/index.d.ts(823,49): error TS1005: ';' expected.
+backend-user_1  | node_modules/@types/express-serve-static-core/index.d.ts(823,64): error TS1005: ';' expected.
+backend-user_1  | node_modules/@types/express-serve-static-core/index.d.ts(824,66): error TS1005: ';' expected.
+backend-user_1  | node_modules/@types/express-serve-static-core/index.d.ts(837,52): error TS1005: ';' expected.
+backend-user_1  | node_modules/@types/express-serve-static-core/index.d.ts(840,26): error TS1005: ';' expected.
+backend-user_1  | node_modules/@types/express-serve-static-core/index.d.ts(848,54): error TS1005: ';' expected.
+backend-user_1  | node_modules/@types/express-serve-static-core/index.d.ts(849,12): error TS1005: ';' expected.
+backend-user_1  | node_modules/@types/express-serve-static-core/index.d.ts(849,39): error TS1109: Expression expected.
+backend-user_1  | node_modules/@types/express-serve-static-core/index.d.ts(882,38): error TS1005: ';' expected.
+backend-user_1  | node_modules/@types/express-serve-static-core/index.d.ts(883,36): error TS1005: ';' expected.
+backend-user_1  | node_modules/@types/express-serve-static-core/index.d.ts(891,72): error TS1005: ';' expected.
+backend-user_1  | node_modules/@types/express-serve-static-core/index.d.ts(896,20): error TS1005: ';' expected.
+backend-user_1  | node_modules/@types/express-serve-static-core/index.d.ts(896,31): error TS1005: ';' expected.
+backend-user_1  | node_modules/@types/express-serve-static-core/index.d.ts(905,20): error TS1005: ';' expected.
+backend-user_1  | node_modules/@types/express-serve-static-core/index.d.ts(916,31): error TS1005: ';' expected.
+backend-user_1  | node_modules/@types/express-serve-static-core/index.d.ts(919,23): error TS1005: ';' expected.
+backend-user_1  | node_modules/@types/express-serve-static-core/index.d.ts(923,20): error TS1005: ';' expected.
+backend-user_1  | node_modules/@types/express-serve-static-core/index.d.ts(923,30): error TS1005: ';' expected.
+backend-user_1  | node_modules/@types/express-serve-static-core/index.d.ts(923,52): error TS1005: ';' expected.
+backend-user_1  | node_modules/@types/express-serve-static-core/index.d.ts(927,14): error TS1005: ';' expected.
+backend-user_1  | node_modules/@types/express-serve-static-core/index.d.ts(927,63): error TS1005: ';' expected.
+backend-user_1  | node_modules/@types/express-serve-static-core/index.d.ts(928,14): error TS1005: ';' expected.
+backend-user_1  | node_modules/@types/express-serve-static-core/index.d.ts(929,14): error TS1005: ';' expected.
+backend-user_1  | node_modules/@types/express-serve-static-core/index.d.ts(944,36): error TS1005: ';' expected.
+backend-user_1  | node_modules/@types/express-serve-static-core/index.d.ts(946,19): error TS1005: ';' expected.
+backend-user_1  | node_modules/@types/express-serve-static-core/index.d.ts(958,46): error TS1005: ';' expected.
+backend-user_1  | node_modules/@types/express-serve-static-core/index.d.ts(972,31): error TS1005: ';' expected.
+backend-user_1  | node_modules/@types/express-serve-static-core/index.d.ts(972,60): error TS1005: ';' expected.
+backend-user_1  | node_modules/@types/express-serve-static-core/index.d.ts(975,23): error TS1005: ';' expected.
+backend-user_1  | node_modules/@types/express-serve-static-core/index.d.ts(975,46): error TS1005: ';' expected.
+backend-user_1  | node_modules/@types/express-serve-static-core/index.d.ts(977,9): error TS1005: ';' expected.
+backend-user_1  | node_modules/@types/express-serve-static-core/index.d.ts(994,16): error TS1005: ';' expected.
+backend-user_1  | node_modules/@types/express-serve-static-core/index.d.ts(994,38): error TS1005: ';' expected.
+backend-user_1  | node_modules/@types/express-serve-static-core/index.d.ts(994,70): error TS1005: ';' expected.
+backend-user_1  | node_modules/@types/express-serve-static-core/index.d.ts(1000,12): error TS1005: ';' expected.
+backend-user_1  | node_modules/@types/express-serve-static-core/index.d.ts(1001,12): error TS1005: ';' expected.
+backend-user_1  | node_modules/@types/express-serve-static-core/index.d.ts(1071,53): error TS1005: ';' expected.
+backend-user_1  | node_modules/@types/express-serve-static-core/index.d.ts(1072,12): error TS1005: ';' expected.
+backend-user_1  | node_modules/@types/express-serve-static-core/index.d.ts(1074,25): error TS1005: ';' expected.
+backend-user_1  | node_modules/@types/express-serve-static-core/index.d.ts(1089,52): error TS1005: ';' expected.
+backend-user_1  | node_modules/@types/express-serve-static-core/index.d.ts(1104,16): error TS1005: ';' expected.
+backend-user_1  | node_modules/@types/express-serve-static-core/index.d.ts(1104,29): error TS1005: ';' expected.
+backend-user_1  | node_modules/@types/express-serve-static-core/index.d.ts(1104,46): error TS1005: ';' expected.
+backend-user_1  | node_modules/@types/express-serve-static-core/index.d.ts(1140,18): error TS1005: ';' expected.
+backend-user_1  | node_modules/@types/express-serve-static-core/index.d.ts(1152,18): error TS1005: ';' expected.
+backend-user_1  | node_modules/@types/express-serve-static-core/index.d.ts(1163,17): error TS1005: ';' expected.
+backend-user_1  | node_modules/@types/express-serve-static-core/index.d.ts(1166,18): error TS1005: ';' expected.
+backend-user_1  | node_modules/@types/express-serve-static-core/index.d.ts(1170,31): error TS1005: ';' expected.
+backend-user_1  | node_modules/@types/express-serve-static-core/index.d.ts(1170,48): error TS1005: ';' expected.
+backend-user_1  | node_modules/@types/express-serve-static-core/index.d.ts(1186,16): error TS1005: ';' expected.
+backend-user_1  | node_modules/@types/express-serve-static-core/index.d.ts(1187,33): error TS1005: ';' expected.
+backend-user_1  | node_modules/@types/express-serve-static-core/index.d.ts(1255,1): error TS1160: Unterminated template literal.
+backend-user_1  | npm ERR! code ELIFECYCLE
+backend-user_1  | npm ERR! errno 2
+backend-user_1  | npm ERR! udagram-api@2.0.0 prod: `tsc && node ./www/server.js`
+backend-user_1  | npm ERR! Exit status 2
+backend-user_1  | npm ERR! 
+backend-user_1  | npm ERR! Failed at the udagram-api@2.0.0 prod script.
+backend-user_1  | npm ERR! This is probably not a problem with npm. There is likely additional logging output above.
+backend-user_1  | 
+backend-user_1  | npm ERR! A complete log of this run can be found in:
+backend-user_1  | npm ERR!     /root/.npm/_logs/2022-12-02T23_33_48_807Z-debug.log
+cd0354-monolith-to-microservices-project_backend-user_1 exited with code 2
+
+
